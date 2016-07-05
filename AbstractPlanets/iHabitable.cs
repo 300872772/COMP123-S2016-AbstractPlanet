@@ -7,5 +7,6 @@ namespace AbstractPlanets
 {
     public interface iHabitable
     {
+        bool Habitable();
     }
 }

@@ -198,5 +198,11 @@ namespace AbstractPlanets
             this._mass = mass;
 
         }
+
+
+        public override string ToString()
+        {
+            return "Name: " + this.Name + "Diameter: " + this.Diameter + "Mass: " + this.Mass;
+        }
     }
 }

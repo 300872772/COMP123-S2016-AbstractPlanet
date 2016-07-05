@@ -12,17 +12,31 @@ namespace AbstractPlanets
         public TerrestrialPlanet(bool oxygen, string name, double diameter, double mass)
             : base(name, diameter, mass)
         {
-
+            this._oxygen = oxygen;
         }
 
-        public bool Habitable()
+         bool iHabitable.Habitable()
         {
-            throw new System.NotImplementedException();
+            if (this._oxygen == true)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
-        public void HasMoons()
+         bool iHasMoons.HasMoons()
         {
-            throw new System.NotImplementedException();
+            if (this.MoonCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

@@ -9,20 +9,45 @@ namespace AbstractPlanets
     {
         private string _type;
 
+
+
         public GiantPlanet(string type, string name, double diameter, double mass)
            : base(name, diameter, mass)
         {
+            if (type == "Gas" || type == "Ice")
+            {
+                this._type ="This Planet is a " + type + " type planet";
+            }
+            else
+            {
+                this._type = "Wrong Type";
+            }
 
+            
         }
 
-        public bool HasMoons()
+         bool iHasMoons.HasMoons()
         {
-            throw new System.NotImplementedException();
+            if (this.MoonCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
-        public bool HasRings()
+         bool iHasRings.HasRings()
         {
-            throw new System.NotImplementedException();
+            if (this.RingCount > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

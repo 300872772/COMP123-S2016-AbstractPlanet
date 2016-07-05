@@ -10,7 +10,7 @@ using System.Threading.Tasks;
  * Date: July 02, 2016
  * Description: This program demonstrates a game named 'Abstract Planet', 
  * 
- * Version: 0.0.01 - Added all classes and interfaces
+ * Version: 0.0.1 - Added all classes and interfaces
  */
 namespace AbstractPlanets
 {
@@ -18,6 +18,9 @@ namespace AbstractPlanets
     {
         static void Main(string[] args)
         {
+
+            GiantPlanet giantPlanet = new GiantPlanet("ss", "mm", 12, 12);
+
         }
     }
 }
