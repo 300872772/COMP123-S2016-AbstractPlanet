@@ -12,17 +12,17 @@ using System.Text;
  */
 namespace AbstractPlanets
 {
-    /**
-     * <summary>
-     * This 'iHasRings' interface has one method HasRings.
-     *  </summary>
-     *  
-     * @interface iHasRings
-     * @method {bool} HasRings
-     *  
-     */
-    public interface iHasRings
+        /**
+    * <summary>
+    * This 'PlanetType' enum contains to member 
+    *  </summary>
+    *  
+    * @enum PlanetType
+    * 
+    */
+    public enum PlanetType
     {
-        bool HasRings();
+        Gas,
+        Ice
     }
 }

@@ -6,7 +6,7 @@ using System.Text;
  *Author: Md Mamunur Rahman
  * Student ID: 300872772 
  *
- * Date: July 02, 2016
+ * Date: July 07, 2016
  * Description: This program demonstrates a game named 'Abstract Planet', 
  * 
  */
@@ -199,10 +199,20 @@ namespace AbstractPlanets
 
         }
 
+        //PUBLIC METHOD+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+       /**
+        * <summary>
+        * This is the overriding method to change the return value.
+        * </summary>
+        *  
+        * @method ToString 
+        * @return {string}   
+        * 
+        */
 
         public override string ToString()
         {
-            return "Name: " + this.Name + "Diameter: " + this.Diameter + "Mass: " + this.Mass;
+            return " Name: " + this.Name + "\n Diameter: " + this.Diameter + " KM\n Mass: " + this.Mass + " Earth Mass";
         }
     }
 }
